@@ -1,0 +1,53 @@
+<div class="body"></div>
+<div class="container">
+  <div class="login">
+    <div class="login-triangle"></div>
+
+    <form #frmRegister="ngForm" class="login-container" (ngSubmit)="onRegister(frmRegister)">
+      
+      <p>
+        Nombre
+        <input type="text" name="name" placeholder="name"  ngModel required>
+      </p>
+      <p>
+        Apellido
+        <input type="text" name="lastname" placeholder="lastname" ngModel required>
+      </p>
+        Tipo de id
+      <select type="text" name="idType" placeholder="idType" ngModel required>
+        <option value="">Seleccionar un tipo</option>
+        <option value="1">Cedula</option>
+        <option value="2">Tarjeta Identidad</option>
+      </select>
+
+      <p>
+        Numero de id
+        <input type="number" name="identificationNumber" placeholder="identificationNumber" ngModel required>
+      </p>
+      <p>
+        Telefono
+        <input type="number" name="phone" placeholder="phone" ngModel required>
+      </p>
+      <p>
+        Correo
+        <input type="text" name="email" placeholder="email" ngModel required>
+      </p>
+      <p>
+        ConfirmarCorreo
+        <input type="text" name="confirmEmail" placeholder="confirmEmail" ngModel required>
+      </p>
+      <p>
+        Contraseña
+        <input type="password" name="password" placeholder="Password" ngModel required>
+      </p>
+      <p>
+        Acepto terminos y condiciones
+        <input type="checkbox" name="tyc"  ngModel required>
+      </p>
+      <p>
+        <input type="submit" value="Registrarse">
+      </p>
+
+    </form>
+  </div>
+</div>

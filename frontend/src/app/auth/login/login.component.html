@@ -1,0 +1,21 @@
+
+
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+  <div>Login<span>User</span></div>
+</div>
+<br>
+<form #frmLogin="ngForm" class="login-container" (ngSubmit)="onLogin(frmLogin)">
+  <div class="login">
+    <input type="email" placeholder="email" name="email" ngModel required><br>
+    <input type="password" placeholder="password" name="password" ngModel required><br>
+    <input type="submit" value="Login">
+</div>
+</form>
+
+
+
+
+
+
